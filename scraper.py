@@ -8,6 +8,7 @@ soup = BeautifulSoup(conteudo_html, 'html.parser')
 lista_produtos = soup.find_all('div', class_='col s12 m4')
 
 print(f"encontrados {len(lista_produtos)} produtos na página.")
+
 print("___")
 
 for produto in lista_produtos:
